@@ -1,0 +1,285 @@
+@import "custom_bootstrap";
+@import "custom_variables";
+
+
+
+$font-size: 20px;
+
+$colors: (
+    nav-background : #89A1BD,
+    accent : #D8E9D9,
+);
+
+
+$position-values: (
+  0: 0,
+  50: 50%,
+  60: 60%,
+  100: 100%
+) !default;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+body, html{
+    height: 100%;
+}
+
+
+body{
+    font-family: 'Lora', serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: #dde5dd;
+
+    // #body-content{
+
+    //     clip-path: polygon(100% 0%, 66% 50%, 100% 100%, 63% 100%, 27% 50%, 63% 0);
+
+
+    //     background-color: #783F61;
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     z-index: -1;
+
+    // }
+}
+
+
+#nav-body{
+    font-family: 'Lora', serif;
+    font-size: $font-size;
+    background-color: map-get($colors, nav-background ) ;
+    padding: 17px;
+    width: 100%;
+    position: absolute;
+    top:0;
+
+    #navbarTogglerDemo02{
+        text-align: center;
+        margin-top: 10px;
+        padding:5px;
+        width:100%;
+
+        .navbar-nav{
+
+
+            .nav-item{
+                width:100%;
+
+
+                &:hover {
+                    background-color:map-get($colors, accent);
+                    transition: 0.3s ease-in-out;
+                }
+                &:active {
+                    background-color:#A05481;
+                }
+
+            }
+        }
+
+
+    }
+
+}
+
+#r-brand{
+    text-align: center;
+    color:map-get($colors, accent);
+}
+
+
+
+
+.footer-box{
+    position: relative;
+    padding-top: 70px;
+
+
+    .footer{
+        background-color: #58799D;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        align-items: center;
+        padding:10px;
+
+        .foot-ul{
+            list-style-type:none ;
+            color: inherit;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .foot-ul{
+                transition: all .4s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+            }
+
+            a:link {
+                color: map-get($colors, accent);
+              }
+
+            a:visited {
+                color: #86466C;
+              }
+
+            a:hover {
+                color: map-get($colors, accent );
+            }
+
+
+        }
+    }
+}
+
+
+.card{
+    background-color: map-get($colors, nav-background);
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+
+
+    .card-body{
+        text-align: center;
+
+        .list-group{
+            background-color: map-get($colors , accent );
+        }
+
+        button{
+            background-color:#A05481 ;
+            color: map-get($colors , accent );
+        }
+
+    }
+
+
+}
+
+.skills{
+
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    ul{
+        list-style-type: none;
+        padding: 10px;
+        h2{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+
+
+}
+
+@include media-breakpoint-up(md) {
+    .skills-box{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 10px;
+    }
+
+}
+
+.head{
+    .head-pic{
+
+        text-align: center;
+        padding-top: 40px;
+
+        img{
+            height:430;
+            width:300px;
+            box-shadow: gray 0 0  10px;
+            border: 1px solid white;
+        }
+    }
+
+    .head-text{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+
+        .btn{
+            background-color:#A05481;
+
+        }
+
+
+    }
+
+}
+
+@include media-breakpoint-up(lg) {
+    .head{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+        padding:10px;
+        margin: 0 auto;
+
+        .head-text{
+            padding-top: 35px;
+        }
+    }
+
+}
+
+
+#project-c{
+    padding-top: 200px;
+
+
+    .carousel-inner{
+        padding-top: 200px;
+
+        img{
+
+            width:200px;
+
+        }
+
+    }
+
+
+    video{
+        height:20px;
+    }
+}
+
+.project-description-box{
+    padding-top: 50px;
+
+
+    .project-description{
+        text-align: center;
+        padding: 10px;;
+
+        button{
+            background-color:#A05481 ;
+        }
+
+    }
+}

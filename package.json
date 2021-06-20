@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch ./scss/home.scss -o ./css"
+  },
+  "engines": {
+    "node": "15.3.0",
+    "npm": "7.0.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marrob01/portfolio-v3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marrob01/portfolio-v3/issues"
+  },
+  "homepage": "https://github.com/marrob01/portfolio-v3/",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "gh-pages": "^3.2.2",
+    "node-sass": "^6.0.0"
+  }
+}
