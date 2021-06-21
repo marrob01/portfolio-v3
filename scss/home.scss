@@ -260,13 +260,19 @@ body{
             width:200px;
 
         }
+        .carousel-item{
+
+    video {
+        border: 5px groove darkblue;
+        padding: 30px;
+        width: auto;
+        height: auto;
+     }
+
+        }
 
     }
 
-
-    video{
-        height:20px;
-    }
 }
 
 .project-description-box{
@@ -283,3 +289,8 @@ body{
 
     }
 }
+
+
+
+
+
