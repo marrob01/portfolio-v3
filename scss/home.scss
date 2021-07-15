@@ -110,7 +110,7 @@ body{
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 2.5rem;
+        height: 2.8rem;
         align-items: center;
         padding:10px;
 
@@ -121,6 +121,7 @@ body{
             display: flex;
             justify-content: space-around;
             align-items: center;
+            font-size: 25px;
 
             .foot-ul{
                 transition: all .4s ease-in-out;
@@ -178,7 +179,6 @@ body{
 }
 
 .skills{
-
     width: 100%;
     text-align: center;
     padding-bottom: 30px;
@@ -236,8 +236,8 @@ body{
     .head{
         display: flex;
         justify-content: space-around;
-        padding-top: 30px;
-        padding:10px;
+        padding-top: 20px;
+        padding: 15px;
         margin: 0 auto;
 
         .head-text{
@@ -292,5 +292,7 @@ body{
 
 
 
-
+.fillGap{
+    color:#D8E9D9;
+}
 
